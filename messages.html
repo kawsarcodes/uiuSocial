@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - UIU Social</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/messages.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <i class="fa-solid fa-graduation-cap mr-2 text-primary"></i>
+                <div>
+                    <a href="/index.html">UIU Social</a>
+                    <!-- <div style="font-size: 10px; font-weight: normal; color: var(--text-muted); margin-top:2px; letter-spacing: 1px;">ACADEMIC COMMUNITY</div> -->
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-item">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+                <a href="groups.html" class="nav-item">
+                    <i class="fa-solid fa-users-line"></i> Department Groups
+                </a>
+                <a href="club_hub.html" class="nav-item">
+                    <i class="fa-solid fa-puzzle-piece"></i> Club Hub
+                </a>
+                <a href="events.html" class="nav-item">
+                    <i class="fa-regular fa-calendar"></i> Events
+                </a>
+                <a href="messages.html" class="nav-item active">
+                    <i class="fa-regular fa-message"></i> Messages
+                </a>
+                <a href="admin.html" class="nav-item">
+                    <i class="fa-solid fa-shield-halved"></i> Admin Panel
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="login.html" class="nav-item sign-out text-danger">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Sign Out
+                </a>
+            </div>
+        </aside>
+
+        <div class="main-content">
+
+            <div class="chat-list-pane">
+                <header class="top-header" style="height: 60px; padding: 0 16px; position: static;">
+                    <div class="search-bar" style="width: 100%;">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search conversations...">
+                    </div>
+                </header>
+
+                <div class="chat-list-header">
+                    <h2>Messages</h2>
+                </div>
+
+
+                <div class="chat-items">
+                    <div class="chat-item active unread" data-user-id="1">
+                        <div class="chat-avatar-wrapper">
+                            <img src="/assets/images/faculties/nahiyan-farabi.png" class="avatar">
+                            <div class="chat-status online"></div>
+                        </div>
+                        <div class="chat-item-content">
+                            <div class="chat-item-header">
+                                <span class="chat-item-name">Rafid Nahiyan Farabi</span>
+                                <span class="chat-item-time">10:42 AM</span>
+                            </div>
+                            <div class="chat-item-preview">
+                                <span class="badge faculty" style="font-size: 8px; padding: 2px 4px;">FACULTY</span>
+                                The draft for the research paper looks promising. Let's...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-item" data-user-id="2">
+                        <div class="chat-avatar-wrapper">
+                            <img src="/assets/images/students/avijit.png?img=11" class="avatar">
+                            <div class="chat-status online"></div>
+                        </div>
+                        <div class="chat-item-content">
+                            <div class="chat-item-header">
+                                <span class="chat-item-name">Avijit Saha</span>
+                                <span class="chat-item-time">Yesterday</span>
+                            </div>
+                            <div class="chat-item-preview">
+                                <span class="badge student" style="font-size: 8px; padding: 2px 4px;">STUDENT</span>
+                                Are we still meeting at the Lab for the project?
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class="chat-area-pane">
+                <div class="chat-area-header">
+                    <div class="chat-header-user">
+                        <img id="chat-header-avatar" src="/assets/images/faculties/nahiyan-farabi.png" class="avatar"
+                            style="width: 36px; height: 36px;">
+                        <div>
+                            <div id="chat-header-title" class="chat-header-name">Rafid Nahiyan Farabi<span
+                                    class="badge student"
+                                    style="background:transparent; border:1px solid var(--badge-faculty-text);">FACULTY</span>
+                            </div>
+                            <div id="chat-header-meta" class="chat-header-meta">
+                                <span class="dot text-success" style="width:6px;height:6px;"></span>
+                                Department of Computer Science • Online
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-header-actions">
+                        <!-- <i class="fa-solid fa-video"></i>
+                        <i class="fa-solid fa-phone"></i> -->
+                        <i id="toggle-info-btn" class="fa-solid fa-circle-info text-primary"></i>
+                    </div>
+                </div>
+
+                <div class="chat-messages" id="chat-messages-container">
+                    <div class="chat-date-divider">
+                        <span>Wednesday, October 23rd</span>
+                    </div>
+
+                    <div class="msg-row received">
+                        <div>
+                            <div class="msg-bubble">
+                                Hello! I've had a chance to look over your initial proposal for the AI Ethics seminar.
+                                It's a very robust start.
+                            </div>
+                            <span class="msg-time">09:15 AM</span>
+                        </div>
+                    </div>
+
+                    <div class="msg-row sent">
+                        <div>
+                            <div class="msg-bubble">
+                                Thank you, Sir. I was concerned about the section regarding algorithmic bias, do you
+                                think it needs more empirical data?
+                            </div>
+                            <span class="msg-time">09:42 AM <i class="fa-solid fa-check-double text-primary"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="msg-row received">
+                        <div>
+                            <div class="msg-bubble">
+                                The draft for the research paper looks promising. Let's actually strengthen that
+                                section. I've attached some relevant case studies from the MIT lab that might help.
+                            </div>
+
+                            <div class="msg-attachment">
+                                <i class="fa-regular fa-file-pdf msg-attachment-icon"></i>
+                                <div class="msg-attachment-info">
+                                    <div class="msg-attachment-name">MIT_AI_Ethics_Case_Study.pdf</div>
+                                    <div class="msg-attachment-meta">2.4 MB • PDF Document</div>
+                                </div>
+                                <i class="fa-solid fa-download msg-attachment-download"></i>
+                            </div>
+
+                            <span class="msg-time">10:42 AM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input-area">
+                    <div class="chat-input-actions">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        <i class="fa-regular fa-image"></i>
+                    </div>
+                    <div class="chat-input-wrapper">
+                        <input type="text" id="chat-input-field" class="chat-input" placeholder="Type your message...">
+                    </div>
+                    <div class="chat-send-btn" id="chat-send-btn">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="user-info-pane" id="user-info-pane">
+                <header class="top-header"
+                    style="height: 70px; padding: 0 16px; justify-content: flex-end; position: static; background: transparent; border-bottom: none;">
+                    <div class="header-actions">
+                        <div class="header-icon"><i class="fa-regular fa-bell"></i></div>
+                        <img src="/assets/images/students/kawsar.png" class="avatar" style="width: 32px; height: 32px;">
+                    </div>
+                </header>
+
+                <div class="info-header">
+                    <img id="info-avatar" src="/assets/images/faculties/nahiyan-farabi.png"
+                        class="info-avatar user-profile-link" data-user-id="1">
+                    <div id="info-name" class="info-name user-profile-link" data-user-id="1">Rafid Nahiyan Farabi</div>
+                    <div id="info-role" class="info-role">Computer Science & Engineering</div>
+                    <div id="info-badges" class="d-flex justify-content-center gap-2 mt-2 mb-3">
+                        <span class="badge" style="background: var(--primary-color); color: white;">FACULTY</span>
+                    </div>
+                    <a id="info-view-profile-btn" href="profile.html?id=1" class="btn btn-outline text-sm w-100"><i
+                            class="fa-solid fa-user mr-1"></i> View Full Profile</a>
+                </div>
+
+                <div class="info-section">
+                    <div class="info-title">SHARED MEDIA</div>
+                    <div class="media-grid">
+                        <div class="media-item"
+                            style="background-image: url('');">
+                        </div>
+                        <div class="media-item"
+                            style="background-image: url('');">
+                        </div>
+                        <div class="media-item media-more">+12</div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <div class="info-title">PREFERENCES</div>
+                    <div class="pref-item">
+                        <span>Mute Notifications</span>
+                        <div class="toggle-switch"></div>
+                    </div>
+                </div>
+
+                <div class="danger-actions">
+                    <div id="block-action-btn" class="danger-action">
+                        <i class="fa-solid fa-ban"></i> Block Member
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/messages.js"></script>
+</body>
+
+</html>

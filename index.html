@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIU Social - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <i class="fa-solid fa-graduation-cap mr-2 text-primary"></i>
+                <div>
+                    <a href="/index.html">UIU Social</a>
+                    <!-- <div style="font-size: 10px; font-weight: normal; color: var(--text-muted); margin-top:2px; letter-spacing: 1px;">ACADEMIC COMMUNITY</div> -->
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-item active">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+                <a href="groups.html" class="nav-item">
+                    <i class="fa-solid fa-users-line"></i> Department Groups
+                </a>
+                <a href="club_hub.html" class="nav-item">
+                    <i class="fa-solid fa-puzzle-piece"></i> Club Hub
+                </a>
+                <a href="events.html" class="nav-item">
+                    <i class="fa-regular fa-calendar"></i> Events
+                </a>
+                <a href="messages.html" class="nav-item">
+                    <i class="fa-regular fa-message"></i> Messages
+                </a>
+                <a href="admin.html" class="nav-item">
+                    <i class="fa-solid fa-shield-halved"></i> Admin Panel
+                </a>
+
+                <div class="sidebar-section">
+                    <h4 class="section-title">YOUR COMMUNITIES</h4>
+                    <ul class="community-list">
+                        <li><span class="dot text-danger"></span> Computer Science '24</li>
+                        <li><span class="dot text-primary"></span> UIU Debate Club</li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="login.html" class="nav-item sign-out text-danger">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Sign Out
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content-container">
+            <!-- Header -->
+            <header class="top-header">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search..." id="search-input">
+                </div>
+
+                <div class="header-nav-tabs">
+                    <a href="#" class="tab active" data-view="home">Home</a>
+                    <a href="#" class="tab" data-view="discover">Discover</a>
+                    <a href="#" class="tab" data-view="people">People</a>
+                </div>
+
+                <div class="header-actions">
+                    <div class="header-icon">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-badge"></span>
+                    </div>
+                    <div class="header-user">
+                        <img src="/assets/images/students/kawsar.png?img=11" alt="User Avatar" class="avatar">
+                    </div>
+                </div>
+            </header>
+            <div class="main-content">
+
+                <!-- Page Content -->
+                <div class="page-content d-flex justify-content-center gap-3">
+                    <!-- Dynamic View Container -->
+                    <div id="main-view-container" style="flex: 1;"></div>
+
+                    <!-- Right Sidebar -->
+                    <div class="right-sidebar" id="right-sidebar" style="max-width: 300px;">
+                        <div class="card mb-3">
+                            <h4 class="card-title">Faculty Announcements</h4>
+                            <div class="announcement">
+                                <div class="fw-600 text-primary mb-1">Midterm Schedule Released</div>
+                                <p class="text-muted text-sm m-0">Check the student portal for the revised schedule.</p>
+                            </div>
+                            <div class="announcement mt-2">
+                                <div class="fw-600 text-primary mb-1">Library 24/7 Access</div>
+                                <p class="text-muted text-sm m-0">Extended hours begin next Monday for the exam period.
+                                </p>
+                            </div>
+                            <div class="text-center mt-3">
+                                <a href="#" class="text-primary fw-600 text-sm">View All Announcements</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4 class="card-title m-0">Upcoming Events</h4>
+                                <i class="fa-regular fa-calendar text-primary"></i>
+                            </div>
+                            <div class="event-item d-flex gap-2 mb-2">
+                                <div class="event-date fw-600 text-primary">
+                                    <span>OCT 14</span>
+                                </div>
+                                <div>
+                                    <div class="fw-600">Career Fair</div>
+                                    <div class="text-muted text-sm">Student Union • 10:00 AM</div>
+                                </div>
+                            </div>
+                            <div class="event-item d-flex gap-2">
+                                <div class="event-date fw-600 text-primary">
+                                    <span>OCT 18</span>
+                                </div>
+                                <div>
+                                    <div class="fw-600">Debate Championship</div>
+                                    <div class="text-muted text-sm">Main Auditorium • 4:00 PM</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card p-0">
+                            <div class="p-3 bg-primary text-white"
+                                style="border-radius: var(--radius-md) var(--radius-md) 0 0; background-color: var(--primary-color);">
+                                <h4 class="m-0" style="color: #fff;"><i class="fa-regular fa-comments mr-2"></i> Online
+                                    Contacts</h4>
+                            </div>
+                            <div class="p-3">
+                                <div class="contact-item d-flex align-items-center gap-2 mb-2 user-profile-link"
+                                    data-user-id="2">
+                                    <div class="position-relative">
+                                        <img src="/assets/images/students/avijit.png?img=15" class="avatar"
+                                            style="width:30px;height:30px;" alt="Contact">
+                                        <span class="online-indicator"></span>
+                                    </div>
+                                    <span>Avijit Saha</span>
+                                </div>
+                                <div class="contact-item d-flex align-items-center gap-2 mb-2 user-profile-link"
+                                    data-user-id="3">
+                                    <div class="position-relative">
+                                        <img src="/assets/images/students/emon.png?img=20" class="avatar"
+                                            style="width:30px;height:30px;" alt="Contact">
+                                        <span class="online-indicator"></span>
+                                    </div>
+                                    <span>Mahmudul Hasan Emon</span>
+                                </div>
+                                <div class="contact-item d-flex align-items-center gap-2 mb-2 user-profile-link"
+                                    data-user-id="4">
+                                    <div class="position-relative">
+                                        <img src="/assets/images/students/nabil.png?img=20" class="avatar"
+                                            style="width:30px;height:30px;" alt="Contact">
+                                        <span class="online-indicator"></span>
+                                    </div>
+                                    <span>Molla Nabil Basar</span>
+                                </div>
+                                <div class="contact-item d-flex align-items-center gap-2 mb-2 user-profile-link"
+                                    data-user-id="5">
+                                    <div class="position-relative">
+                                        <img src="/assets/images/students/mitul.png?img=20" class="avatar"
+                                            style="width:30px;height:30px;" alt="Contact">
+                                        <span class="online-indicator"></span>
+                                    </div>
+                                    <span>Tamim Al Mitul</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="people-grid" id="peopleCardsContainer">
+            <!-- by js -->
+        </div>
+    </div>
+
+    <!-- Report Modal -->
+    <div id="reportModal" class="report-modal" style="display: none;">
+        <div class="report-modal-content">
+            <div class="report-modal-header">
+                <h3><i class="fa-solid fa-flag" style="color: #dc3545;"></i> Report Post</h3>
+                <button class="report-modal-close" id="reportModalClose">&times;</button>
+            </div>
+            <div class="report-modal-body">
+                <p class="report-modal-subtitle">Why are you reporting this post?</p>
+
+                <div class="report-options">
+                    <label class="report-option">
+                        <input type="radio" name="reportReason" value="spam">
+                        <div class="report-option-content">
+                            <i class="fa-solid fa-bullhorn"></i>
+                            <div>
+                                <span class="report-option-title">Spam / Advertising</span>
+                                <span class="report-option-desc">Unsolicited commercial content or repetitive
+                                    messages</span>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="report-option">
+                        <input type="radio" name="reportReason" value="harassment">
+                        <div class="report-option-content">
+                            <i class="fa-solid fa-user-slash"></i>
+                            <div>
+                                <span class="report-option-title">Harassment or Bullying</span>
+                                <span class="report-option-desc">Targeted harassment, threats, or abusive
+                                    behavior</span>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="report-option">
+                        <input type="radio" name="reportReason" value="copyright">
+                        <div class="report-option-content">
+                            <i class="fa-regular fa-copyright"></i>
+                            <div>
+                                <span class="report-option-title">Copyright Infringement</span>
+                                <span class="report-option-desc">Unauthorized use of copyrighted material</span>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="report-option">
+                        <input type="radio" name="reportReason" value="hate_speech">
+                        <div class="report-option-content">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <div>
+                                <span class="report-option-title">Hate Speech</span>
+                                <span class="report-option-desc">Content that promotes discrimination or
+                                    hostility</span>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="report-option">
+                        <input type="radio" name="reportReason" value="misinformation">
+                        <div class="report-option-content">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                            <div>
+                                <span class="report-option-title">Misinformation</span>
+                                <span class="report-option-desc">False or misleading information</span>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="report-option">
+                        <input type="radio" name="reportReason" value="other">
+                        <div class="report-option-content">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            <div>
+                                <span class="report-option-title">Other</span>
+                                <span class="report-option-desc">Something not covered above</span>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="report-additional-details" id="reportAdditionalDetails" style="display: none;">
+                    <label for="reportDetails">Additional details (optional):</label>
+                    <textarea id="reportDetails" placeholder="Provide more information about this report..."
+                        rows="3"></textarea>
+                </div>
+            </div>
+            <div class="report-modal-footer">
+                <button class="btn btn-outline" id="reportCancelBtn">Cancel</button>
+                <button class="btn btn-danger" id="reportSubmitBtn">
+                    <i class="fa-solid fa-flag" style="margin-right: 10px;"></i> Submit Report
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

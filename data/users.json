@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1",
+    "name": "Rafid Nahiyan Farabi",
+    "role": "Faculty",
+    "department": "CSE",
+    "status": "Offline",
+    "isOnline": false,
+    "avatar": "/assets/images/faculties/nahiyan-farabi.png?img=15",
+    "about": "Cybersecurity expert and network architecture consultant. Mentoring capstone projects.",
+    "faculty": true
+  },
+  {
+    "id": "2",
+    "name": "Avijit Saha",
+    "role": "Student",
+    "department": "CSE",
+    "status": "Online",
+    "isOnline": true,
+    "avatar": "/assets/images/students/avijit.png?img=15",
+    "about": "Teaching Web Architecture and Database Management. Focused on practical, project-based learning.",
+    "faculty": false
+  },
+  {
+    "id": "3",
+    "name": "Mahmudul Hasan Emon",
+    "role": "Student",
+    "department": "CSE",
+    "status": "Online",
+    "isOnline": true,
+    "avatar": "/assets/images/students/emon.png?img=20",
+    "about": "ReactJS and Tailwind CSS enthusiast. Always looking for the next hackathon.",
+    "faculty": false
+  },
+  {
+    "id": "4",
+    "name": "Molla Nabil Basar",
+    "role": "Student",
+    "department": "EEE",
+    "status": "Offline",
+    "isOnline": false,
+    "avatar": "/assets/images/students/nabil.png?img=20",
+    "about": "Hardware aficionado. Building IoT devices and robotics projects in my free time.",
+    "faculty": false
+  },
+  {
+    "id": "5",
+    "name": "Tamim Al Mitul",
+    "role": "Student",
+    "department": "BBA",
+    "status": "Online",
+    "isOnline": true,
+    "avatar": "/assets/images/students/mitul.png?img=20",
+    "about": "Business major with a minor in tech. Organizing case competitions and networking events.",
+    "faculty": false
+  },
+  {
+    "id": "6",
+    "name": "Kawsar Ahmed",
+    "role": "Student",
+    "department": "CSE",
+    "status": "Online",
+    "isOnline": true,
+    "avatar": "/assets/images/students/kawsar.png?img=33",
+    "about": "Passionate about building scalable web applications and exploring new technologies.",
+    "faculty": false
+  }
+]
