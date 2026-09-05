@@ -1,0 +1,190 @@
+.club-avatar-wrap {
+    width: 90px;
+    height: 90px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    overflow: hidden;
+    background: #fff;
+}
+
+.club-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.club-cover-icon {
+    position: absolute;
+    bottom: 16px;
+    right: 24px;
+    font-size: 80px;
+    opacity: 0.15;
+    color: white;
+}
+
+.club-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: var(--bg-body);
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+.club-info-card {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.club-info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 14px;
+}
+
+.club-info-row:last-child {
+    border-bottom: none;
+}
+
+.club-info-label {
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.club-info-value {
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.activity-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 12px;
+}
+
+.activity-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: var(--bg-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.club-post-card {
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.club-post-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.club-post-actions {
+    display: flex;
+    gap: 24px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 12px;
+    margin-top: 12px;
+}
+
+.club-post-action-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background 0.15s;
+}
+
+.club-post-action-btn:hover {
+    background: var(--bg-body);
+    color: var(--primary-color);
+}
+
+.advisor-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    background: #fff4ed;
+    border-radius: 10px;
+    border: 1px solid #fae0d0;
+    margin-top: 16px;
+}
+
+.advisor-badge i {
+    color: var(--primary-color);
+    font-size: 18px;
+    margin: 0;
+}
+
+.feed-section {
+    width: 100%;
+}
+
+.clubs-details-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.club-details-full-width {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.profile-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.feed-section {
+    width: 100%;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Portal - UIU Social</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+
+<body>
+    <div class="login-overlay"></div>
+
+    <div class="auth-container">
+        <div class="auth-illustration">
+            <img src="assets/images/svg/login.svg" alt="Login Illustration">
+        </div>
+
+        <div class="auth-card">
+            <h1 class="auth-title">Sign In</h1>
+            <p class="auth-subtitle">Sign in to your academic community.</p>
+
+            <div class="auth-tabs">
+                <div class="auth-tab active">Student</div>
+                <div class="auth-tab">Faculty</div>
+                <div class="auth-tab">Guest</div>
+            </div>
+
+            <form action="index.html">
+                <div class="form-group">
+                    <label class="form-label">University Email</label>
+                    <input type="email" class="form-control" placeholder="name@university.edu" required>
+                </div>
+                <div class="form-group">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <label class="form-label m-0">Password</label>
+                        <a href="#" class="text-primary text-sm">Forgot Password?</a>
+                    </div>
+                    <input type="password" class="form-control" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            </form>
+
+            <a href="index.html" style="text-decoration: none; display: block;">
+                <button type="button" class="btn-skip">
+                    <i class="fa-regular fa-clock"></i> Skip for now
+                </button>
+            </a>
+            <!-- 
+            <div class="auth-footer-notice">
+                <i class="fa-solid fa-shield-check"></i>
+                <div>
+                    <strong>Account Verification</strong>
+                    <p>All new registrations may take 24-hour for the verification process.</p>
+                </div>
+            </div> -->
+
+            <div class="divider">
+                <span>OR</span>
+            </div>
+
+            <div class="text-center">
+                <div class="text-muted text-sm mb-2">Don't have an account? <a href="register.html"
+                        class="text-primary fw-600">Sign Up</a></div>
+                <!-- <div class="text-muted text-sm">Trouble logging in? <a href="#" class="text-muted text-decoration-underline">Contact Support</a></div> -->
+            </div>
+        </div>
+    </div>
+    <script src="js/login-register.js"></script>
+</body>
+
+</html>

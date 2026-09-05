@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Hub - UIU Social</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/club_hub.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <i class="fa-solid fa-graduation-cap mr-2 text-primary"></i>
+                <div>
+                    <a href="/index.html">UIU Social</a>
+                    <!-- <div style="font-size: 10px; font-weight: normal; color: var(--text-muted); margin-top:2px; letter-spacing: 1px;">ACADEMIC COMMUNITY</div> -->
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-item">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+                <a href="groups.html" class="nav-item">
+                    <i class="fa-solid fa-users-line"></i> Department Groups
+                </a>
+                <a href="club_hub.html" class="nav-item active">
+                    <i class="fa-solid fa-puzzle-piece"></i> Club Hub
+                </a>
+                <a href="events.html" class="nav-item">
+                    <i class="fa-regular fa-calendar"></i> Events
+                </a>
+                <a href="messages.html" class="nav-item">
+                    <i class="fa-regular fa-message"></i> Messages
+                </a>
+                <a href="admin.html" class="nav-item">
+                    <i class="fa-solid fa-shield-halved"></i> Admin Panel
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="login.html" class="nav-item sign-out text-danger"
+                    style="color: var(--danger-color); font-weight: 600;">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Sign Out
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content" style="background-color: #fdf6f2;">
+            <!-- Header -->
+            <header class="top-header" style="background-color: #fff; border-bottom: 1px solid #fae6d8;">
+                <div class="search-bar" style="width: 400px; background-color: #fff4ed; border: none;">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search for clubs, events or groups..." style="color: #555;">
+                </div>
+
+                <div class="header-actions">
+                    <div class="header-icon"><i class="fa-regular fa-bell"></i></div>
+                    <div class="header-user">
+                        <img src="/assets/images/students/kawsar.png?img=11" alt="User" class="avatar">
+                    </div>
+                </div>
+            </header>
+
+            <div class="page-content" style="display: flex; gap: 32px; width: 100%;">
+
+                <!-- Main Feed Area -->
+                <div class="club-feed" style="flex: 2;">
+
+                    <div class="page-header" style="margin-bottom: 24px;">
+                        <h1 style="color: #b54a1d; font-size: 28px; margin-bottom: 8px;">Club Hub</h1>
+                        <p style="color: #665; font-size: 14px;">Connect with campus organizations, pursue your
+                            passions, and grow your network beyond the classroom.</p>
+                    </div>
+
+                    <!-- Featured Clubs Section -->
+                    <div class="section-title d-flex justify-content-between align-items-end mb-3">
+                        <div>
+                            <h3 style="font-size: 18px; color: #333; margin-bottom: 4px;" id="clubs-section-title">
+                                Featured Clubs</h3>
+                            <div style="font-size: 12px; color: #777;" id="clubs-subtitle">Most active and popular clubs
+                                this semester</div>
+                        </div>
+                        <a href="#" id="view-all-clubs" style="color: #b54a1d; font-size: 13px; font-weight: 600;">View
+                            All <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+
+                    <!-- Club Categories -->
+                    <!-- <h3 style="font-size: 18px; color: #333; margin-bottom: 12px; margin-top:32px;">Club Categories</h3> -->
+                    <div class="category-pills mb-4">
+                        <button class="pill active">All</button>
+                        <button class="pill">Technology</button>
+                        <button class="pill">Arts & Culture</button>
+                        <button class="pill">Sports</button>
+                        <button class="pill">Academic</button>
+                    </div>
+
+                    <div class="featured-clubs-grid mb-4" id="clubs-grid">
+                        <!-- by js/club_hub.js -->
+                    </div>
+
+                    <!-- Announcements -->
+                    <h3 style="font-size: 18px; color: #333; margin-bottom: 16px; margin-top:32px;">Recent Announcements
+                    </h3>
+
+                    <div class="announcement-card mb-3">
+                        <div class="announcement-header">
+                            <div class="ann-icon rounded-circle overflow-hidden"
+                                style="background-color: #fff3e0; color: #e65100;">
+                                <img src="assets/images/clubs/robotics-club.png" alt="Robotics Club Logo"
+                                    class="club-logo-img " style="border-radius: 10px;">
+                            </div>
+                            <div>
+                                <div class="ann-author">Robotics Club</div>
+                                <div class="ann-time">Posted 2 hours ago</div>
+                            </div>
+                        </div>
+                        <h4 class="ann-title">New 3D Printers arrived!</h4>
+                        <p class="ann-text">We are excited to announce that the lab has received three new Bambu Lab
+                            printers. Orientation for new members starts this Friday.</p>
+                        <div class="ann-actions">
+                            <span class="ann-action-item"><i class="fa-regular fa-heart"></i> 42</span>
+                            <span class="ann-action-item"><i class="fa-regular fa-comment"></i> 13</span>
+                        </div>
+                    </div>
+
+                    <div class="announcement-card mb-3">
+                        <div class="announcement-header">
+                            <div class="ann-icon rounded-circle overflow-hidden"
+                                style="background-color: #ffebee; color: #c62828;">
+                                <img src="assets/images/clubs/debate-club.png" alt="UIU Debate Club Logo"
+                                    class="club-logo-img" style="border-radius: 10px;">
+                            </div>
+                            <div>
+                                <div class="ann-author">UIU Debate Club</div>
+                                <div class="ann-time">Posted 5 hours ago</div>
+                            </div>
+                        </div>
+                        <h4 class="ann-title">Regional Qualifiers Registration</h4>
+                        <p class="ann-text">The registration for the upcoming Inter University National Debate
+                            Competition is now open. Team formation meetings at Room 402.</p>
+                        <div class="ann-actions">
+                            <span class="ann-action-item"><i class="fa-regular fa-heart"></i> 89</span>
+                            <span class="ann-action-item"><i class="fa-regular fa-comment"></i> 5</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Sidebar (Upcoming Events) -->
+                <div class="club-sidebar" style="flex: 1; max-width: 300px;">
+                    <h3 style="font-size: 18px; color: #333; margin-bottom: 16px;">Upcoming Events</h3>
+
+                    <!-- Event 1 -->
+                    <div class="club-event-card mb-4">
+                        <div class="club-event-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=500&q=80"
+                                alt="Robotics Workshop" class="club-event-img">
+                            <span class="club-event-badge workshop">WORKSHOP</span>
+                        </div>
+                        <div class="club-event-body">
+                            <div class="club-event-date">SEP 12 • 02:00 PM</div>
+                            <h4 class="club-event-title">Robotics Workshop 101</h4>
+                            <div class="club-event-loc">Main Auditorium</div>
+                            <div class="club-event-attendees mt-3 d-flex align-items-center">
+                                <div class="avatar-group">
+                                    <img src="/assets/images/students/kawsar.png?img=1" class="avatar-sm">
+                                    <img src="/assets/images/students/avijit.png?img=2" class="avatar-sm">
+                                    <div class="avatar-sm more-avatar">+45</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event 2 -->
+                    <div class="club-event-card mb-4">
+                        <div class="club-event-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1540317580384-e5d43616b9aa?auto=format&fit=crop&w=500&q=80"
+                                alt="Debate Contest" class="club-event-img">
+                            <span class="club-event-badge competition">COMPETITION</span>
+                        </div>
+                        <div class="club-event-body">
+                            <div class="club-event-date">SEP 15 • 10:00 AM</div>
+                            <h4 class="club-event-title">Inter-Dept Debate Contest</h4>
+                            <div class="club-event-loc">Seminar Hall A</div>
+                            <div class="club-event-attendees mt-3 d-flex align-items-center">
+                                <div class="avatar-group">
+                                    <img src="/assets/images/students/emon.png?img=3" class="avatar-sm">
+                                    <img src="/assets/images/students/nabil.png?img=4" class="avatar-sm">
+                                    <div class="avatar-sm more-avatar">+120</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event 3 -->
+                    <div class="club-event-card mb-4">
+                        <div class="club-event-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=500&q=80"
+                                alt="Cultural Fest" class="club-event-img">
+                            <span class="club-event-badge festival">FESTIVAL</span>
+                        </div>
+                        <div class="club-event-body">
+                            <div class="club-event-date">OCT 01 • 04:00 PM</div>
+                            <h4 class="club-event-title">Autumn Cultural Fest</h4>
+                            <div class="club-event-loc">Open Field</div>
+                            <div class="club-event-attendees mt-3 d-flex align-items-center">
+                                <div class="avatar-group">
+                                    <img src="/assets/images/students/mitul.png?img=5" class="avatar-sm">
+                                    <img src="/assets/images/students/kawsar.png?img=6" class="avatar-sm">
+                                    <div class="avatar-sm more-avatar">+300</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/club_hub.js"></script>
+</body>
+
+</html>

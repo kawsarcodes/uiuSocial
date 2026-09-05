@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join UIU Social</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div class="login-overlay"></div>
+
+    <div class="auth-container">
+        <!-- Left -->
+        <div class="auth-card">
+            <h1 class="auth-title">Join UIU Social</h1>
+            <p class="auth-subtitle">Enter your details to create your academic account.</p>
+
+            <div class="auth-tabs">
+                <div class="auth-tab active">Student</div>
+                <div class="auth-tab">Faculty</div>
+            </div>
+
+            <form action="login.html">
+                <div class="form-group">
+                    <label class="form-label"><i class="fa-regular fa-user"></i> Full Name</label>
+                    <input type="text" class="form-control" placeholder="Kawsar Ahmed" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label"><i class="fa-regular fa-envelope"></i> University Email</label>
+                    <input type="email" class="form-control" placeholder="mahmed2430083@uiu.ac.bd" required>
+                    <div class="help-text">Must use a valid university domain address.</div>
+                </div>
+
+                <div class="row">
+                    <div class="col form-group">
+                        <label class="form-label"><i class="fa-regular fa-id-badge"></i> Student ID</label>
+                        <input type="text" class="form-control" placeholder="0112430083" required>
+                    </div>
+                    <div class="col form-group">
+                        <label class="form-label">Department</label>
+                        <select class="form-control" required>
+                            <option value="">Select Dept</option>
+                            <option value="CSE">CSE</option>
+                            <option value="EEE">EEE</option>
+                            <option value="BBA">BBA</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label"><i class="fa-solid fa-key"></i> Create Password</label>
+                    <input type="password" class="form-control" placeholder="••••••••" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Create Account <i
+                        class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i></button>
+            </form>
+
+            <div class="text-center mt-3">
+                <div class="text-muted text-sm">Already have an account? <a href="login.html"
+                        class="text-primary fw-600">Sign In</a></div>
+            </div>
+        </div>
+
+        <!-- Right -->
+        <div class="auth-illustration">
+            <img src="assets/images/svg/signup.svg" alt="Registration Illustration">
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/login-register.js"></script>
+</body>
+
+</html>

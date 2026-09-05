@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - UIU Social</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/club_detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <i class="fa-solid fa-graduation-cap mr-2 text-primary"></i>
+                <div>
+                    <a href="/index.html">UIU Social</a>
+                    <!-- <div style="font-size: 10px; font-weight: normal; color: var(--text-muted); margin-top:2px; letter-spacing: 1px;">ACADEMIC COMMUNITY</div> -->
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-item">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+                <a href="groups.html" class="nav-item">
+                    <i class="fa-solid fa-users-line"></i> Department Groups
+                </a>
+                <a href="club_hub.html" class="nav-item">
+                    <i class="fa-solid fa-puzzle-piece"></i> Club Hub
+                </a>
+                <a href="events.html" class="nav-item">
+                    <i class="fa-regular fa-calendar"></i> Events
+                </a>
+                <a href="messages.html" class="nav-item">
+                    <i class="fa-regular fa-message"></i> Messages
+                </a>
+                <a href="admin.html" class="nav-item">
+                    <i class="fa-solid fa-shield-halved"></i> Admin Panel
+                </a>
+
+                <div class="sidebar-section">
+                    <h4 class="section-title">YOUR COMMUNITIES</h4>
+                    <ul class="community-list">
+                        <li><span class="dot text-danger"></span> Computer Science '24</li>
+                        <li><span class="dot text-primary"></span> UIU Debate Club</li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="login.html" class="nav-item sign-out text-danger">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Sign Out
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content-container">
+            <!-- Header -->
+            <header class="top-header">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search people, profiles..." id="search-input">
+                </div>
+
+                <div class="header-actions">
+                    <div class="header-icon">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-badge"></span>
+                    </div>
+                    <div class="header-user user-profile-link" data-user-id="1" style="cursor: pointer;">
+                        <img src="/assets/images/students/kawsar.png?img=11" alt="User Avatar"
+                            class="avatar user-profile-link" data-user-id="1">
+                    </div>
+                </div>
+            </header>
+
+            <div class="main-content" id="profile-view-container">
+                <div class="page-content">
+                    <!-- Profile Header Card -->
+                    <div class="profile-header card">
+                        <div class="profile-cover" id="profile-cover">
+                            <div class="club-cover-icon" id="profile-cover-icon">
+                                <i id="profile-cover-icon-el" class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                        </div>
+                        <div class="profile-info-container">
+                            <div class="club-avatar-wrap profile-main-avatar" style="padding: 0;">
+                                <img id="profile-avatar" src="" alt="Profile Avatar" class="club-avatar-img">
+                            </div>
+                            <div class="profile-details">
+                                <h2 id="profile-name">Loading profile...</h2>
+                                <div class="profile-meta">
+                                    <span id="profile-role"></span> • <span id="profile-dept"></span>
+                                    • <span id="profile-status"></span>
+                                </div>
+                                <div id="profile-badges" class="mt-2"></div>
+                                <p id="profile-about" class="mt-3 text-muted"></p>
+                            </div>
+                            <div class="profile-actions" id="profile-actions-container">
+                                <button class="btn btn-primary" id="profile-connect-btn">
+                                    <i class="fa-solid fa-user-plus"></i> Connect
+                                </button>
+                                <button class="btn btn-outline" id="profile-message-btn">
+                                    <i class="fa-solid fa-message"></i> Message
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Profile Tabs -->
+                    <div class="profile-tabs mt-4">
+                        <a href="#" class="tab active" data-tab="posts">Recent Posts</a>
+                        <a href="#" class="tab" data-tab="connections">Connections</a>
+                        <a href="#" class="tab" data-tab="groups">Groups & Clubs</a>
+                        <a href="#" class="tab" data-tab="about">About Info</a>
+                    </div>
+
+                    <!-- Tab Sections -->
+                    <div class="feed-section mt-3" id="tab-posts">
+                        <!-- by JS -->
+                    </div>
+
+                    <div class="feed-section mt-3" id="tab-connections" style="display:none;">
+                        <!-- by JS -->
+                    </div>
+
+                    <div class="feed-section mt-3" id="tab-groups" style="display:none;">
+                        <!-- by JS -->
+                    </div>
+
+                    <div class="feed-section mt-3" id="tab-about" style="display:none;">
+                        <!-- by JS -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+
+</html>

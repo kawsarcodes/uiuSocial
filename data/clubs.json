@@ -1,0 +1,255 @@
+[
+  {
+    "id": 1,
+    "name": "App Forum",
+    "slug": "app-forum",
+    "category": "Technology",
+    "image": "assets/images/clubs/app-forum.png",
+    "icon": "fa-code",
+    "iconColor": "#d32f2f",
+    "iconBg": "#ffe8e8",
+    "coverColor": "linear-gradient(135deg, #d32f2f, #f06292)",
+    "members": 450,
+    "founded": "January 2021",
+    "advisor": "Dr. Rafid Nahiyan Farabi",
+    "about": "A collaborative platform for app developers at UIU. We discuss mobile and web application development, share project ideas, organize hackathons, and help each other build real-world skills.",
+    "tags": [
+      "Mobile Dev",
+      "Web Dev",
+      "Hackathon",
+      "UI/UX"
+    ],
+    "activities": [
+      "Monthly App Showcase",
+      "Weekly Dev Talks",
+      "Inter-university Hackathon"
+    ],
+    "recentPosts": [
+      {
+        "author": "Kawsar Ahmed",
+        "avatar": "/assets/images/students/kawsar.png",
+        "time": "2h ago",
+        "content": "Just finished the prototype for our new campus map app! Sharing a sneak peek below. Feedback welcome!",
+        "likes": 34,
+        "comments": 8
+      },
+      {
+        "author": "Mahmudul Hasan Emon",
+        "avatar": "/assets/images/students/emon.png",
+        "time": "6h ago",
+        "content": "Great session today on React Native! The recording will be uploaded to the drive by tonight.",
+        "likes": 51,
+        "comments": 12
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "UIU Computer Club",
+    "slug": "uiu-computer-club",
+    "category": "Technology",
+    "image": "assets/images/clubs/computer-club.png",
+    "icon": "fa-desktop",
+    "iconColor": "#e65100",
+    "iconBg": "#fff3e0",
+    "coverColor": "linear-gradient(135deg, #e65100, #ffa726)",
+    "members": 1200,
+    "founded": "March 2015",
+    "advisor": "Dr. Avijit Saha",
+    "about": "The largest and most prestigious club at UIU. UIU Computer Club (UIUCC) drives innovation through programming contests, seminars, and tech workshops. We nurture future software engineers and tech leaders.",
+    "tags": [
+      "Competitive Programming",
+      "Seminars",
+      "CP Contests",
+      "Tech Talks"
+    ],
+    "activities": [
+      "ICPC Training",
+      "National Collegiate Programming Contest",
+      "Annual Tech Symposium"
+    ],
+    "recentPosts": [
+      {
+        "author": "Avijit Saha",
+        "avatar": "/assets/images/students/avijit.png",
+        "time": "1d ago",
+        "content": "The ICPC Regional 2024 practice sessions begin this Saturday. All registered members please confirm attendance.",
+        "likes": 98,
+        "comments": 23
+      },
+      {
+        "author": "Molla Nabil Basar",
+        "avatar": "/assets/images/students/nabil.png",
+        "time": "2d ago",
+        "content": "Finished 3rd in the inter-university CP contest! Huge thanks to the club for the training!",
+        "likes": 145,
+        "comments": 31
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Cultural Club",
+    "slug": "cultural-club",
+    "category": "Arts & Culture",
+    "image": "assets/images/clubs/cultural-club.png",
+    "icon": "fa-masks-theater",
+    "iconColor": "#2e7d32",
+    "iconBg": "#e8f5e9",
+    "coverColor": "linear-gradient(135deg, #2e7d32, #66bb6a)",
+    "members": 850,
+    "founded": "August 2018",
+    "advisor": "Prof. Shamima Akhter",
+    "about": "The Cultural Club of UIU celebrates the rich heritage and diversity of Bangladeshi culture. We organize music, drama, dance, and poetry events that enrich campus life and foster creativity.",
+    "tags": [
+      "Music",
+      "Drama",
+      "Dance",
+      "Poetry",
+      "Photography"
+    ],
+    "activities": [
+      "Annual Cultural Festival",
+      "Photography Contest",
+      "Drama Competitions",
+      "Bangla New Year Celebration"
+    ],
+    "recentPosts": [
+      {
+        "author": "Tamim Al Mitul",
+        "avatar": "/assets/images/students/mitul.png",
+        "time": "3h ago",
+        "content": "Registrations for the Autumn Cultural Fest drama competition are now OPEN! Sign up before October 1st.",
+        "likes": 67,
+        "comments": 18
+      },
+      {
+        "author": "Kawsar Ahmed",
+        "avatar": "/assets/images/students/kawsar.png",
+        "time": "1d ago",
+        "content": "The photography contest results are out! Check the noticeboard. Amazing work everyone!",
+        "likes": 112,
+        "comments": 29
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Robotics Club",
+    "slug": "robotics-club",
+    "category": "Technology",
+    "image": "assets/images/clubs/robotics-club.png",
+    "icon": "fa-robot",
+    "iconColor": "#1565c0",
+    "iconBg": "#e3f2fd",
+    "coverColor": "linear-gradient(135deg, #1565c0, #42a5f5)",
+    "members": 320,
+    "founded": "June 2019",
+    "advisor": "Dr. Karim Hossain",
+    "about": "The UIU Robotics Lab is where hardware meets software. We build autonomous robots, IoT devices, and embedded systems. Members compete in national and international robotics competitions.",
+    "tags": [
+      "Robotics",
+      "IoT",
+      "Arduino",
+      "Raspberry Pi",
+      "AI"
+    ],
+    "activities": [
+      "RoboFest Competition",
+      "3D Printing Workshops",
+      "Arduino Bootcamp",
+      "Inter-university Robot Wars"
+    ],
+    "recentPosts": [
+      {
+        "author": "Molla Nabil Basar",
+        "avatar": "/assets/images/students/nabil.png",
+        "time": "2h ago",
+        "content": "New 3D Printers arrived! Three brand-new Bambu Lab machines are now in the lab. Orientation this Friday.",
+        "likes": 42,
+        "comments": 13
+      },
+      {
+        "author": "Mahmudul Hasan Emon",
+        "avatar": "/assets/images/students/emon.png",
+        "time": "5h ago",
+        "content": "Our team placed 2nd in the National RoboFest 2024! Super proud of everyone who put in the work!",
+        "likes": 189,
+        "comments": 47
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "UIU Debate Club",
+    "slug": "debate-club",
+    "category": "Academic",
+    "image": "assets/images/clubs/debate-club.png",
+    "icon": "fa-comments",
+    "iconColor": "#c62828",
+    "iconBg": "#ffebee",
+    "coverColor": "linear-gradient(135deg, #c62828, #ef5350)",
+    "members": 520,
+    "founded": "October 2017",
+    "advisor": "Dr. Rezwanul Huque",
+    "about": "UIU Debate Club (UIUDC) is dedicated to promoting logic, critical thinking, public speaking, and parliamentary debate skills among students. We represent UIU in national and international debate tournaments.",
+    "tags": [
+      "Debate",
+      "Public Speaking",
+      "Parliamentary",
+      "Logic"
+    ],
+    "activities": [
+      "Inter-University National Debate",
+      "Weekly Public Speaking Sessions",
+      "Freshers Debate Workshop"
+    ],
+    "recentPosts": [
+      {
+        "author": "Samiha Anjum",
+        "avatar": "/assets/images/students/avijit.png",
+        "time": "5h ago",
+        "content": "The registration for the upcoming Inter University National Debate Competition is now open. Team formation meetings at Room 402.",
+        "likes": 89,
+        "comments": 5
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Sports Club",
+    "slug": "sports-club",
+    "category": "Sports",
+    "image": "assets/images/clubs/sports-club.png",
+    "icon": "fa-trophy",
+    "iconColor": "#00897b",
+    "iconBg": "#e0f2f1",
+    "coverColor": "linear-gradient(135deg, #00897b, #4db6ac)",
+    "members": 950,
+    "founded": "February 2016",
+    "advisor": "Prof. Tareq Rahman",
+    "about": "UIU Sports Club brings together athletes and sports enthusiasts across campus. We organize tournaments, foster teamwork, and promote fitness through indoor and outdoor sports activities.",
+    "tags": [
+      "Cricket",
+      "Football",
+      "Table Tennis",
+      "Chess",
+      "Badminton"
+    ],
+    "activities": [
+      "UIU Champions League",
+      "Annual Sports Indoor Tournament",
+      "Inter-University Football Championship"
+    ],
+    "recentPosts": [
+      {
+        "author": "Tamim Al Mitul",
+        "avatar": "/assets/images/students/mitul.png",
+        "time": "4h ago",
+        "content": "Fixtures for the UIU Cricket Premier League are out! Check the tournament schedule on the noticeboard.",
+        "likes": 104,
+        "comments": 15
+      }
+    ]
+  }
+]
