@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIU Social - Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <i class="fa-solid fa-graduation-cap mr-2 text-primary"></i>
+                <div>
+                    <a href="/index.html">UIU Social</a>
+                    <!-- <div style="font-size: 10px; font-weight: normal; color: var(--text-muted); margin-top:2px; letter-spacing: 1px;">ACADEMIC COMMUNITY</div> -->
+
+                </div>
+            </div>
+            <!-- <div style="padding: 12px 24px; background-color: #fff4ed; border-bottom: 1px solid var(--border-color);">
+                <div class="d-flex align-items-center gap-2" style="color: var(--primary-color); font-weight: 600;">
+                    <i class="fa-solid fa-shield-halved"></i> Admin Panel
+                </div>
+                <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">System Governance</div>
+            </div> -->
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-item">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+                <a href="groups.html" class="nav-item">
+                    <i class="fa-solid fa-users-line"></i> Department Groups
+                </a>
+                <a href="club_hub.html" class="nav-item">
+                    <i class="fa-solid fa-puzzle-piece"></i> Club Hub
+                </a>
+                <a href="" class="nav-item">
+                    <i class="fa-regular fa-calendar"></i> Events
+                </a>
+                <a href="messages.html" class="nav-item">
+                    <i class="fa-regular fa-message"></i> Messages
+                </a>
+                <a href="admin.html" class="nav-item active">
+                    <i class="fa-solid fa-shield-halved"></i> Admin Panel
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="login.html" class="nav-item sign-out text-danger">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Sign Out
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="top-header" style="justify-content: flex-end;">
+                <div class="search-bar" style="position: absolute; left: 32px;">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Global system search...">
+                </div>
+
+                <div class="header-actions">
+                    <div class="header-icon">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+                    <div class="header-user">
+                        <div class="header-user-info">
+                            <div class="header-user-role" style="color: var(--primary-color);">Admin Control</div>
+                            <div class="header-user-name text-primary">ADMIN</div>
+                        </div>
+                        <img src="/assets/images/students/kawsar.png?img=60" alt="Admin" class="avatar">
+                    </div>
+                </div>
+            </header>
+
+            <div class="page-content">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="page-header m-0">
+                        <h1 class="page-title">System Moderation</h1>
+                        <p class="page-subtitle">Review pending verifications and manage reported community content.</p>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-outline"><i class="fa-solid fa-filter mr-2"></i> Filters</button>
+                        <button class="btn btn-primary"><i class="fa-solid fa-download mr-2"></i> Export Logs</button>
+                    </div>
+                </div>
+
+                <div class="admin-layout">
+                    <div class="admin-main">
+                        <!-- Verification Queue -->
+                        <div class="card p-0 mb-4">
+                            <div class="section-header">
+                                <i class="fa-solid fa-shield-check text-primary"></i>
+                                <h3>User Verification Queue</h3>
+                                <span class="badge-pill ml-auto">12 Pending</span>
+                            </div>
+                            <table class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th>USER</th>
+                                        <th>VERIFICATION ROLE</th>
+                                        <th>DATE REQUESTED</th>
+                                        <th>ACTIONS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="user-cell user-profile-link" data-user-id="6"
+                                                style="cursor:pointer;">
+                                                <img src="/assets/images/faculties/nahiyan-farabi.png?img=15"
+                                                    class="avatar" style="width:36px;height:36px;" alt="Avatar">
+                                                <div class="user-info">
+                                                    <span class="user-name">Rafid Nahiyan Farabi</span>
+                                                    <span class="user-email">farabi@cse.uiu.ac.bd</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="badge faculty">Faculty</span></td>
+                                        <td class="text-muted text-sm">Oct 24, 2023</td>
+                                        <td>
+                                            <div class="action-icons">
+                                                <i class="fa-solid fa-xmark icon-btn reject"></i>
+                                                <i class="fa-solid fa-circle-check icon-btn accept"></i>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="user-cell user-profile-link" data-user-id="2"
+                                                style="cursor:pointer;">
+                                                <img src="/assets/images/students/avijit.png?img=15" class="avatar"
+                                                    style="width:36px;height:36px;" alt="Avatar">
+                                                <div class="user-info">
+                                                    <span class="user-name" style="color: var(--text-main);">Avijit
+                                                        Saha</span>
+                                                    <span class="user-email">asaha2430535@bscse.uiu.ac.bd</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="badge student">Student Council</span></td>
+                                        <td class="text-muted text-sm">Oct 25, 2023</td>
+                                        <td>
+                                            <div class="action-icons">
+                                                <i class="fa-solid fa-xmark icon-btn reject"></i>
+                                                <i class="fa-solid fa-circle-check icon-btn accept"></i>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="user-cell user-profile-link" data-user-id="3"
+                                                style="cursor:pointer;">
+                                                <img src="/assets/images/students/emon.png?img=20" class="avatar"
+                                                    style="width:36px;height:36px;" alt="Avatar">
+                                                <div class="user-info">
+                                                    <span class="user-name"
+                                                        style="color: var(--primary-color);">Mahmudul Hasan Emon</span>
+                                                    <span class="user-email">semon2430105@bscse.uiu.ac.bd</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="badge"
+                                                style="background-color: #f1f5f9; color: #475569; border: 1px solid #cbd5e1;">
+                                                Alumni Mentor
+                                            </span>
+                                        </td>
+                                        <td class="text-muted text-sm">Oct 25, 2023</td>
+                                        <td>
+                                            <div class="action-icons">
+                                                <i class="fa-solid fa-xmark icon-btn reject"></i>
+                                                <i class="fa-solid fa-circle-check icon-btn accept"></i>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="view-all-row">
+                                <a href="#">View All Verification Requests</a>
+                            </div>
+                        </div>
+
+                        <!-- Content Moderation -->
+                        <div class="card p-0">
+                            <div class="section-header" style="border-top: 4px solid var(--danger-color);">
+                                <i class="fa-solid fa-circle-exclamation text-danger"></i>
+                                <h3 class="text-danger">Content Moderation Queue</h3>
+                                <span class="badge-pill ml-auto"
+                                    style="background-color: #fee2e2; color: var(--danger-color);">High Priority:
+                                    3</span>
+                            </div>
+
+                            <div class="moderation-grid">
+                                <!-- Mod Item 1 -->
+                                <div class="mod-card">
+                                    <div class="mod-card-header spam">
+                                        <div><i class="fa-solid fa-triangle-exclamation"></i> SPAM / ADVERTISING</div>
+                                        <span class="mod-time">2m ago</span>
+                                    </div>
+                                    <div class="mod-card-body">
+                                        <p><i>"Check out this link for cheap textbooks, 100% legit and approved by the
+                                                board..."</i></p>
+                                        <div class="mod-reported-by">Reported by: <strong>S. Ahmed</strong></div>
+                                    </div>
+                                    <div class="mod-actions">
+                                        <button class="mod-btn dismiss">Dismiss</button>
+                                        <button class="mod-btn delete">Delete Post</button>
+                                    </div>
+                                </div>
+
+                                <!-- Mod Item 2 -->
+                                <div class="mod-card">
+                                    <div class="mod-card-header harassment">
+                                        <div><i class="fa-solid fa-ban"></i> HARASSMENT</div>
+                                        <span class="mod-time">15m ago</span>
+                                    </div>
+                                    <div class="mod-card-body">
+                                        <div class="mod-image-placeholder">
+                                            <i class="fa-solid fa-eye-slash fa-2x"></i>
+                                        </div>
+                                        <p class="mb-1 fw-600">Targeted comments on a club event post.</p>
+                                        <div class="mod-reported-by">Target: <strong class="text-primary">Robotics
+                                                Club</strong></div>
+                                    </div>
+                                    <div class="mod-actions">
+                                        <button class="mod-btn dismiss">Dismiss</button>
+                                        <button class="mod-btn delete" style="background-color: #991b1b;">Restrict
+                                            User</button>
+                                    </div>
+                                </div>
+
+                                <!-- Mod Item 3 -->
+                                <div class="mod-card">
+                                    <div class="mod-card-header copyright">
+                                        <div><i class="fa-regular fa-copyright"></i> COPYRIGHT</div>
+                                        <span class="mod-time">1h ago</span>
+                                    </div>
+                                    <div class="mod-card-body">
+                                        <p>Sharing of unreleased department research papers without proper faculty
+                                            authorization.</p>
+                                        <div class="mod-reported-by">Source: <strong class="text-primary">CSE
+                                                Dept</strong></div>
+                                    </div>
+                                    <div class="mod-actions">
+                                        <button class="mod-btn dismiss">Dismiss</button>
+                                        <button class="mod-btn delete">Remove</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="admin-side">
+                        <div class="server-status">
+                            <div class="status-title">SERVER STATUS</div>
+                            <div class="status-main">Optimal Integrity</div>
+                            <div class="status-indicator">
+                                <span class="status-dot"></span> All systems operational
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h4 class="card-title text-primary" style="margin-top:0;">Quick Stats</h4>
+                            <div class="stat-row">
+                                <span class="stat-label">New Users (24h)</span>
+                                <span class="stat-value">+142</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Reports Filed</span>
+                                <span class="stat-value" style="color: var(--text-main);">18</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Mean Response Time</span>
+                                <span class="stat-value">14m</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - UIU Social</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/events.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <i class="fa-solid fa-graduation-cap mr-2 text-primary"></i>
+                <div>
+                    <a href="/index.html">UIU Social</a>
+                    <!-- <div style="font-size: 10px; font-weight: normal; color: var(--text-muted); margin-top:2px; letter-spacing: 1px;">ACADEMIC COMMUNITY</div> -->
+
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-item">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+                <a href="groups.html" class="nav-item">
+                    <i class="fa-solid fa-users-line"></i> Department Groups
+                </a>
+                <a href="club_hub.html" class="nav-item">
+                    <i class="fa-solid fa-puzzle-piece"></i> Club Hub
+                </a>
+                <a href="events.html" class="nav-item active">
+                    <i class="fa-regular fa-calendar"></i> Events
+                </a>
+                <a href="messages.html" class="nav-item">
+                    <i class="fa-regular fa-message"></i> Messages
+                </a>
+                <a href="admin.html" class="nav-item">
+                    <i class="fa-solid fa-shield-halved"></i> Admin Panel
+                </a>
+
+                <div class="sidebar-section">
+                    <h4 class="section-title">MY ORGANIZATIONS</h4>
+                    <ul class="community-list">
+                        <li><span class="dot text-danger"></span> IEEE Student Branch</li>
+                        <li><span class="dot text-primary"></span> Robotics Club</li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="login.html" class="nav-item sign-out text-danger">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Sign Out
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="top-header">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search events, seminars...">
+                </div>
+
+                <div class="header-actions">
+                    <div class="header-icon">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+                    <div class="header-user">
+                        <img src="/assets/images/students/kawsar.png?img=11" alt="User Avatar" class="avatar">
+                    </div>
+                </div>
+            </header>
+
+            <div class="page-content">
+                <div class="d-flex justify-content-between align-items-end">
+                    <div class="page-header m-0">
+                        <h1 class="page-title">Campus Events & Seminars</h1>
+                        <p class="page-subtitle">Discover opportunities to learn, network, and grow within the UIU
+                            community.</p>
+                    </div>
+                    <!-- <div class="filter-tabs">
+                        <div class="filter-tab active">All Events</div>
+                        <div class="filter-tab">Upcoming</div>
+                        <div class="filter-tab">Past</div>
+                    </div> -->
+                </div>
+
+                <div class="events-layout">
+                    <div class="events-main">
+
+                        <!-- Featured Event -->
+                        <div class="featured-event">
+                            <div class="featured-image">
+                                <div class="featured-date">
+                                    <span>OCT</span>
+                                    <strong>24</strong>
+                                </div>
+                            </div>
+                            <div class="featured-content">
+                                <div class="event-tags">
+                                    <span class="badge" style="background: transparent;">Featured Seminar</span>
+                                    <span class="badge" style="background: transparent;">Career Growth</span>
+                                </div>
+                                <h2 class="featured-title">Navigating the Future of AI in Modern Engineering</h2>
+                                <p class="featured-desc">Join us for an exclusive keynote featuring industry pioneers
+                                    from Silicon Valley as they discuss the integration of artificial intelligence in
+                                    engineering practices and what it means for upcoming graduates.</p>
+
+                                <div class="featured-meta">
+                                    <span><i class="fa-solid fa-location-dot"></i> Main Auditorium</span>
+                                    <span><i class="fa-solid fa-user-group"></i> 245 Attending</span>
+                                </div>
+
+                                <div class="featured-footer">
+                                    <div class="organizer">
+                                        <img src="/assets/images/students/kawsar.png?img=12" class="avatar"
+                                            style="width: 32px; height: 32px;">
+                                        <div class="organizer-info">
+                                            Organized by
+                                            <strong>IEEE Student Branch</strong>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary">RSVP Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Event Grid -->
+                        <div class="event-grid">
+                            <div class="event-card">
+                                <div class="event-card-img"
+                                    style="background-image: url('/assets/images/uiu/web-hackathon.png');">
+                                    <div class="event-card-date">
+                                        <span>OCT</span>
+                                        <strong>28</strong>
+                                    </div>
+                                    <span class="badge" style="background: #7a7a7a75;">In Person</span>
+                                </div>
+                                <div class="event-card-body">
+                                    <div class="event-category">WORKSHOP</div>
+                                    <div class="event-card-title">Web Development Hackathon 2026</div>
+                                    <div class="event-card-desc">A 24-hour intense coding session to build solutions for
+                                        campus problems.</div>
+                                    <div class="event-card-footer">
+                                        <div class="d-flex align-items-center">
+                                            <img src="/assets/images/students/kawsar.png?img=11" class="avatar"
+                                                style="width:20px;height:20px; margin-right:-5px; border:1px solid white;">
+                                            <img src="/assets/images/students/emon.png?img=12" class="avatar"
+                                                style="width:20px;height:20px; margin-right:-5px; border:1px solid white;">
+                                            <img src="/assets/images/students/avijit.png" class="avatar"
+                                                style="width:20px;height:20px; margin-right:-5px; border:1px solid white;">
+                                            <img src="/assets/images/students/nabil.png" class="avatar"
+                                                style="width:20px;height:20px; border:1px solid white;">
+                                        </div>
+                                        <button class="btn btn-outline btn-sm"
+                                            style="background-color: var(--primary-color); color: #fff;">Join
+                                            Event</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="event-card">
+                                <div class="event-card-img"
+                                    style="background-image: url('/assets/images/uiu/myth-reality.png');">
+                                    <div class="event-card-date">
+                                        <span>NOV</span>
+                                        <strong>02</strong>
+                                    </div>
+                                    <span class="badge" style="background: #7a7a7a75;">Virtual</span>
+                                </div>
+                                <div class="event-card-body">
+                                    <div class="event-category">WEBINAR</div>
+                                    <div class="event-card-title">Data Science: Myths vs Reality</div>
+                                    <div class="event-card-desc">Understanding what the industry actually looks for in
+                                        junior data scientists.</div>
+                                    <div class="event-card-footer">
+                                        <span><i class="fa-regular fa-clock"></i> 06:00 PM</span>
+                                        <button class="btn btn-outline btn-sm"
+                                            style="background-color: var(--primary-color); color: #fff;">Remind
+                                            Me</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="event-card">
+                                <div class="event-card-img"
+                                    style="background-image: url('/assets/images/uiu/club-fair.png');">
+                                    <div class="event-card-date">
+                                        <span>NOV</span>
+                                        <strong>15</strong>
+                                    </div>
+                                    <span class="badge" style="background: #7a7a7ae3;">In Person</span>
+                                </div>
+                                <div class="event-card-body">
+                                    <div class="event-category">SOCIAL</div>
+                                    <div class="event-card-title">Annual University Club Fair</div>
+                                    <div class="event-card-desc">Discover over 50+ clubs and organizations to join and
+                                        make your...</div>
+                                    <div class="event-card-footer">
+                                        <span><i class="fa-solid fa-location-dot"></i> Campus Plaza</span>
+                                        <button class="btn btn-outline btn-sm"
+                                            style="background-color: var(--primary-color); color: #fff;">I'm
+                                            Going</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Academic Seminars -->
+                        <div class="section-heading">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <h3>Academic Seminars</h3>
+                        </div>
+
+                        <div class="seminar-item">
+                            <div class="seminar-date">
+                                <span>DEC</span>
+                                <strong>05</strong>
+                            </div>
+                            <div class="seminar-info">
+                                <div class="seminar-meta">
+                                    <span class="seminar-dept">EEE Dept</span>
+                                    <span class="seminar-loc">Seminar Hall B</span>
+                                </div>
+                                <div class="seminar-title">Emerging Trends in Smart Grid Technology</div>
+                                <div class="seminar-desc">Specialized seminar for senior year engineering students.
+                                </div>
+                            </div>
+                            <div class="seminar-speaker">
+                                <span class="seminar-speaker-label">Speakers</span>
+                                <span class="seminar-speaker-name">Dr. Robert Chen +2</span>
+                            </div>
+                            <button class="btn-icon"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+
+                        <div class="seminar-item">
+                            <div class="seminar-date">
+                                <span>DEC</span>
+                                <strong>08</strong>
+                            </div>
+                            <div class="seminar-info">
+                                <div class="seminar-meta">
+                                    <span class="seminar-dept">CSE Dept</span>
+                                    <span class="seminar-loc">Virtual Room 4</span>
+                                </div>
+                                <div class="seminar-title">Quantum Computing: The Next Frontier</div>
+                                <div class="seminar-desc">Introduction to qubit mechanics and quantum algorithms.</div>
+                            </div>
+                            <div class="seminar-speaker">
+                                <span class="seminar-speaker-label">Speakers</span>
+                                <span class="seminar-speaker-name" style="color: var(--primary-color);">Prof. Sarah
+                                    Jenkins</span>
+                            </div>
+                            <button class="btn-icon"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+
+                    </div>
+
+                    <div class="events-side" style="max-width: 300px;">
+                        <div class="glance-box">
+                            <div class="glance-stat">
+                                <div class="glance-number text-primary">12</div>
+                                <div class="glance-label">Events this week</div>
+                            </div>
+                            <div class="glance-stat">
+                                <div class="glance-number" style="color: var(--text-main);">03</div>
+                                <div class="glance-label" style="color: var(--text-muted);">RSVPs pending</div>
+                            </div>
+                        </div>
+
+                        <div class="card p-0" style="padding: 20px !important;">
+                            <div class="clubs-header">
+                                <span>POPULAR CLUBS</span>
+                                <a href="#" class="text-primary fw-600" style="text-transform: none;">View All</a>
+                            </div>
+
+                            <div class="club-item">
+                                <div class="club-info">
+                                    <div class="ann-icon rounded-circle overflow-hidden"
+                                        style="background-color: #fff3e0; color: #e65100;">
+                                        <img src="assets/images/clubs/computer-club.png" alt="Computer Club Logo"
+                                            height="35px" width="35px" class="club-logo-img "
+                                            style="border-radius: 10px;">
+                                    </div>
+                                    <div>
+                                        <div class="club-name">Computer Club</div>
+                                        <div class="club-members">1.2k Members</div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-muted" style="font-size:12px;"></i>
+                            </div>
+
+                            <div class="club-item">
+                                <div class="club-info">
+                                    <div class="ann-icon rounded-circle overflow-hidden"
+                                        style="background-color: #fff3e0; color: #e65100;">
+                                        <img src="assets/images/clubs/robotics-club.png" alt="Robotics Club Logo"
+                                            height="35px" width="35px" class="club-logo-img "
+                                            style="border-radius: 10px;">
+                                    </div>
+                                    <div>
+                                        <div class="club-name">Robotics Club</div>
+                                        <div class="club-members">320 Members</div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-muted" style="font-size:12px;"></i>
+                            </div>
+
+                            <div class="club-item">
+                                <div class="club-info">
+                                    <div class="ann-icon rounded-circle overflow-hidden"
+                                        style="background-color: #fff3e0; color: #e65100;">
+                                        <img src="assets/images/clubs/app-forum.png" alt="App Forum Logo" height="35px"
+                                            width="35px" class="club-logo-img " style="border-radius: 10px;">
+                                    </div>
+                                    <div>
+                                        <div class="club-name">App Forum</div>
+                                        <div class="club-members">450 Members</div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-muted" style="font-size:12px;"></i>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/events.js"></script>
+</body>
+
+</html>
