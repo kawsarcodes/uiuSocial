@@ -24,26 +24,27 @@
                 <div class="auth-tab">Faculty</div>
             </div>
 
-            <form action="login.html">
+            <form id="register-form">
+                <div id="register-error" class="text-danger mb-3" style="display:none; font-size: 14px; text-align: center;"></div>
                 <div class="form-group">
                     <label class="form-label"><i class="fa-regular fa-user"></i> Full Name</label>
-                    <input type="text" class="form-control" placeholder="Kawsar Ahmed" required>
+                    <input type="text" id="reg-name" class="form-control" placeholder="Kawsar Ahmed" required>
                 </div>
 
                 <div class="form-group">
                     <label class="form-label"><i class="fa-regular fa-envelope"></i> University Email</label>
-                    <input type="email" class="form-control" placeholder="mahmed2430083@uiu.ac.bd" required>
+                    <input type="email" id="reg-email" class="form-control" placeholder="mahmed2430083@uiu.ac.bd" required>
                     <div class="help-text">Must use a valid university domain address.</div>
                 </div>
 
                 <div class="row">
-                    <div class="col form-group">
+                    <div class="col form-group" id="reg-student-id-col">
                         <label class="form-label"><i class="fa-regular fa-id-badge"></i> Student ID</label>
-                        <input type="text" class="form-control" placeholder="0112430083" required>
+                        <input type="text" id="reg-student-id" class="form-control" placeholder="0112430083" required>
                     </div>
                     <div class="col form-group">
                         <label class="form-label">Department</label>
-                        <select class="form-control" required>
+                        <select id="reg-department" class="form-control" required>
                             <option value="">Select Dept</option>
                             <option value="CSE">CSE</option>
                             <option value="EEE">EEE</option>
@@ -53,16 +54,29 @@
                 </div>
 
                 <div class="form-group">
+                    <label class="form-label"><i class="fa-regular fa-image"></i> Profile Image (Optional)</label>
+                    <div class="row">
+                        <div class="col" style="padding-right: 5px;">
+                            <input type="url" id="reg-avatar-url" class="form-control" placeholder="Image URL">
+                        </div>
+                        <div class="col" style="padding-left: 5px;">
+                            <input type="file" id="reg-avatar-file" class="form-control" accept="image/*">
+                        </div>
+                    </div>
+                    <div class="help-text">Provide an image URL or upload from your PC.</div>
+                </div>
+
+                <div class="form-group">
                     <label class="form-label"><i class="fa-solid fa-key"></i> Create Password</label>
-                    <input type="password" class="form-control" placeholder="••••••••" required>
+                    <input type="password" id="reg-password" class="form-control" placeholder="••••••••" required>
                 </div>
 
                 <div class="form-group">
                     <label class="form-label">Confirm Password</label>
-                    <input type="password" class="form-control" placeholder="••••••••" required>
+                    <input type="password" id="reg-confirm-password" class="form-control" placeholder="••••••••" required>
                 </div>
 
-                <button type="submit" class="btn btn-primary btn-block">Create Account <i
+                <button type="submit" id="reg-btn" class="btn btn-primary btn-block">Create Account <i
                         class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i></button>
             </form>
 
@@ -78,7 +92,6 @@
         </div>
     </div>
 
-    <script src="js/main.js"></script>
     <script src="js/login-register.js"></script>
 </body>
 

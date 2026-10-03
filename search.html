@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - UIU Social</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="/css/search.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><i class="fa-solid fa-graduation-cap mr-2 text-primary"></i><div><a href="index.html">UIU Social</a></div></div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-item"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="groups.html" class="nav-item"><i class="fa-solid fa-users-line"></i> Department Groups</a>
+                <a href="announcements.html" class="nav-item">
+                    <i class="fa-solid fa-bullhorn"></i> Announcements
+                </a>
+                <a href="club_hub.html" class="nav-item"><i class="fa-solid fa-puzzle-piece"></i> Club Hub</a>
+                <a href="events.html" class="nav-item"><i class="fa-regular fa-calendar"></i> Events</a>
+                <a href="messages.html" class="nav-item"><i class="fa-regular fa-message"></i> Messages</a>
+                <a href="admin.html" class="nav-item"><i class="fa-solid fa-shield-halved"></i> Admin Panel</a>
+            </nav>
+            <div class="sidebar-footer"><a href="login.html" class="nav-item sign-out text-danger"><i class="fa-solid fa-arrow-right-from-bracket"></i> Sign Out</a></div>
+        </aside>
+        <main class="main-content">
+            <header class="top-header">
+                                <div class="search-bar" style="width:400px;"><i class="fa-solid fa-magnifying-glass"></i><input type="text" id="global-search" placeholder="Search people, posts, groups, clubs, events..."></div>
+                <div class="header-actions">
+                    <div class="header-icon"><i class="fa-regular fa-bell"></i><span class="notification-badge"></span></div>
+                    <div class="header-user"><img src="assets/images/students/kawsar.png?img=11" alt="User" class="avatar"></div>
+                </div>
+            </header>
+            <div class="page-content">
+                <h1 class="page-title mb-1">Search</h1>
+                <p class="text-muted text-sm mb-3" id="search-summary">Search people, posts, department groups, clubs and events.</p>
+                <div class="search-tabs mb-3" style="display:flex;gap:8px;flex-wrap:wrap;">
+                    <button class="tab active" data-type="all">All</button>
+                    <button class="tab" data-type="people">People</button>
+                    <button class="tab" data-type="posts">Posts</button>
+                    <button class="tab" data-type="groups">Groups</button>
+                    <button class="tab" data-type="clubs">Clubs</button>
+                    <button class="tab" data-type="events">Events</button>
+                </div>
+                <div id="search-results" class="search-results-grid"></div>
+                <div class="text-center mt-3" id="search-more-wrap" style="display:none;">
+                    <button class="btn btn-outline" id="search-load-more"><i class="fa-solid fa-arrow-down"></i> Load more</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

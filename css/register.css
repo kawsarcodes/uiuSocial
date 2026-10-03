@@ -136,6 +136,39 @@ body {
     flex: 1;
 }
 
+#reg-avatar-file {
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+    border: none;
+}
+
+#reg-avatar-file::-webkit-file-upload-button {
+    display: none;
+}
+
+#reg-avatar-file::before {
+    content: 'Choose File';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: var(--radius-md);
+    padding: 12px 16px;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    box-sizing: border-box;
+}
+
+#reg-avatar-file:hover::before {
+    background-color: var(--primary-hover);
+}
+
 .btn-block {
     width: 100%;
     padding: 14px;

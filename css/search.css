@@ -1,0 +1,19 @@
+.search-tabs .tab {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    background: var(--bg-body);
+    color: var(--text-muted);
+}
+
+.search-tabs .tab:hover {
+    background: #fae6d8;
+}
+
+.search-tabs .tab.active {
+    background: var(--primary-color);
+    color: white;
+}

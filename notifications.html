@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications - UIU Social</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/notification.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><i class="fa-solid fa-graduation-cap mr-2 text-primary"></i>
+                <div><a href="index.html">UIU Social</a></div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-item"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="groups.html" class="nav-item"><i class="fa-solid fa-users-line"></i> Department Groups</a>
+                <a href="announcements.html" class="nav-item">
+                    <i class="fa-solid fa-bullhorn"></i> Announcements
+                </a>
+                <a href="club_hub.html" class="nav-item"><i class="fa-solid fa-puzzle-piece"></i> Club Hub</a>
+                <a href="events.html" class="nav-item"><i class="fa-regular fa-calendar"></i> Events</a>
+                <a href="messages.html" class="nav-item"><i class="fa-regular fa-message"></i> Messages</a>
+                <a href="admin.html" class="nav-item"><i class="fa-solid fa-shield-halved"></i> Admin Panel</a>
+            </nav>
+            <div class="sidebar-footer"><a href="login.html" class="nav-item sign-out text-danger"><i
+                        class="fa-solid fa-arrow-right-from-bracket"></i> Sign Out</a></div>
+        </aside>
+        <main class="main-content">
+            <header class="top-header">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search people, posts, groups, clubs, events...">
+                </div>
+                <div class="header-actions">
+                    <div class="header-icon"><i class="fa-regular fa-bell"></i><span class="notification-badge"></span>
+                    </div>
+                    <div class="header-user"><img src="assets/images/students/kawsar.png?img=11" alt="User"
+                            class="avatar"></div>
+                </div>
+            </header>
+            <div class="page-content">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
+                    <div>
+                        <h1 class="page-title">Notifications</h1>
+                        <span class="text-muted text-sm" id="notif-unread-count">Loading...</span>
+                    </div>
+                    <div class="d-flex gap-2 align-items-center">
+                        <div class="search-bar" style="width:260px;">
+                            <i class="fa-solid fa-filter"></i>
+                            <input type="text" id="notif-filter-input" placeholder="Filter this list...">
+                        </div>
+                        <select class="form-control" id="notif-filter" style="width:auto;">
+                            <option value="all">All</option>
+                            <option value="unread">Unread</option>
+                        </select>
+                        <button class="btn btn-outline" id="clear-all"><i class="fa-solid fa-trash"></i> Clear
+                            all</button>
+                        <button class="btn btn-primary" id="mark-all-read"><i class="fa-solid fa-check-double"></i> Mark
+                            all as read</button>
+                    </div>
+                </div>
+                <div class="card" id="notif-list" style="padding:0;">
+                    <div class="text-center text-muted p-4">Loading...</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/notifications.js"></script>
+</body>
+
+</html>
