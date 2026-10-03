@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Groups - UIU Social</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/groups.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <i class="fa-solid fa-graduation-cap mr-2 text-primary"></i>
+                <div>
+                    <a href="/index.html">UIU Social</a>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-item">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+                <a href="groups.html" class="nav-item active">
+                    <i class="fa-solid fa-users-line"></i> Department Groups
+                </a>
+                <a href="club_hub.html" class="nav-item">
+                    <i class="fa-solid fa-puzzle-piece"></i> Club Hub
+                </a>
+                <a href="events.html" class="nav-item">
+                    <i class="fa-regular fa-calendar"></i> Events
+                </a>
+                <a href="messages.html" class="nav-item">
+                    <i class="fa-regular fa-message"></i> Messages
+                </a>
+                <a href="admin.html" class="nav-item">
+                    <i class="fa-solid fa-shield-halved"></i> Admin Panel
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="login.html" class="nav-item sign-out text-danger">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Sign Out
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="top-header">
+                <div class="search-bar" style="width: 400px;">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search courses or groups...">
+                </div>
+
+                <div class="header-actions">
+                    <div class="header-icon"><i class="fa-regular fa-bell"></i></div>
+                    <div class="header-user">
+                        <img src="/assets/images/students/kawsar.png?img=11" alt="User" class="avatar">
+                    </div>
+                </div>
+            </header>
+
+            <div class="page-content">
+                <div class="groups-top-actions">
+                    <div class="page-header m-0">
+                        <h1 class="page-title">Department Groups</h1>
+                        <p class="page-subtitle">Connect with your peers, share resources, and collaborate on projects
+                            within your department and enrolled courses.</p>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-outline"><i class="fa-solid fa-filter mr-2"></i> Filter</button>
+                        <button class="btn btn-primary"><i class="fa-solid fa-plus mr-2"></i> Create Group</button>
+                    </div>
+                </div>
+
+                <!-- Filter Category Buttons with data-filter -->
+                <div class="category-pills mb-4">
+                    <button class="filter-btn pill active" data-filter="all">All Groups</button>
+                    <button class="filter-btn pill" data-filter="enrolled">My Enrolled</button>
+                    <button class="filter-btn pill" data-filter="cs">Computer Science</button>
+                    <button class="filter-btn pill" data-filter="ee">Electrical Engineering</button>
+                    <button class="filter-btn pill" data-filter="bba">Business School</button>
+                </div>
+
+                <div class="groups-layout">
+                    <div class="groups-main">
+                        <!-- Featured Group Card -->
+                        <div class="group-card featured-group" data-category="cs" data-enrolled="true">
+                            <div class="featured-banner"
+                                style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/images/uiu/uiu-cse.png') center/cover no-repeat;">
+                                <h2>UIU CSE FAMILY</h2>
+                            </div>
+                            <div class="featured-body">
+                                <div class="featured-info">
+                                    <div class="featured-badge">MOST ACTIVE</div>
+                                    <div class="featured-title">CSE Batch 243 Official</div>
+                                    <div class="featured-stats">
+                                        <span><i class="fa-solid fa-user-group"></i> 452 Members</span>
+                                        <span><i class="fa-regular fa-message"></i> 12 New Posts</span>
+                                    </div>
+                                    <p class="featured-desc">The main hub for CSE Batch 24 students. Discuss exams,
+                                        course registrations, and upcoming events.</p>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary" style="background-color: #9a3412;">View
+                                        Group</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Groups Grid -->
+                        <div class="groups-grid">
+                            <!-- Robotics Club Core -->
+                            <div class="group-card" data-category="cs,ee" data-enrolled="false">
+                                <div class="group-image-header"
+                                    style="background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('/assets/images/groups/robotics.png') center/cover no-repeat;">
+                                    <div class="group-title-overlay">Robotics Club Core</div>
+                                </div>
+                                <div class="group-desc">Project discussion and technical support for robotics
+                                    competition teams.</div>
+                                <div class="group-footer">
+                                    <span class="group-members">86 Members</span>
+                                    <button class="btn-join">Join</button>
+                                </div>
+                            </div>
+
+                            <!-- DBMS Section B -->
+                            <div class="group-card" data-category="cs" data-enrolled="true">
+                                <div class="group-image-header"
+                                    style="background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('/assets/images/groups/dbms.png') center/cover no-repeat;">
+                                    <div class="group-title-overlay">DBMS Section B</div>
+                                </div>
+                                <div class="group-desc">Specifically for student enrolled in CSE411 Section B. Group
+                                    project coordination.</div>
+                                <div class="group-footer">
+                                    <span class="group-members">42 Members</span>
+                                    <button class="btn-join joined">View</button>
+                                </div>
+                            </div>
+
+                            <!-- AI & Machine Learning -->
+                            <div class="group-card" data-category="cs" data-enrolled="false">
+                                <div class="group-image-header"
+                                    style="background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('/assets/images/groups/ml.png') center/cover no-repeat;">
+                                    <div class="group-title-overlay">AI & Machine Learning</div>
+                                </div>
+                                <div class="group-desc">Advanced research discussion and paper reading group for senior
+                                    students.</div>
+                                <div class="group-footer">
+                                    <span class="group-members">215 Members</span>
+                                    <button class="btn-join">Join</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="load-more">
+                            <button class="load-more-btn">Load More Groups</button>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar Group -->
+                    <div class="groups-side">
+                        <div class="group-card algo-group" data-category="cs" data-enrolled="false">
+                            <div class="group-image-header"
+                                style="background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/assets/images/groups/dsa.png') center/cover no-repeat;">
+                                <div class="group-title-overlay">Algorithms Course Group</div>
+                            </div>
+                            <div class="algo-desc">Collaborative study group for CSE301. Weekly problem solving and
+                                resource sharing.</div>
+                            <div class="algo-footer">
+                                <span class="group-members">128 Members</span>
+                                <button class="btn-join btn-outline">Join</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/groups.js"></script>
+</body>
+
+</html>
