@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - UIU Social</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><i class="fa-solid fa-graduation-cap mr-2 text-primary"></i><div><a href="index.html">UIU Social</a></div></div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-item"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="groups.html" class="nav-item"><i class="fa-solid fa-users-line"></i> Department Groups</a>
+                <a href="announcements.html" class="nav-item">
+                    <i class="fa-solid fa-bullhorn"></i> Announcements
+                </a>
+                <a href="club_hub.html" class="nav-item"><i class="fa-solid fa-puzzle-piece"></i> Club Hub</a>
+                <a href="events.html" class="nav-item"><i class="fa-regular fa-calendar"></i> Events</a>
+                <a href="messages.html" class="nav-item"><i class="fa-regular fa-message"></i> Messages</a>
+                <a href="admin.html" class="nav-item"><i class="fa-solid fa-shield-halved"></i> Admin Panel</a>
+            </nav>
+            <div class="sidebar-footer"><a href="login.html" class="nav-item sign-out text-danger"><i class="fa-solid fa-arrow-right-from-bracket"></i> Sign Out</a></div>
+        </aside>
+        <main class="main-content-container">
+            <header class="top-header">
+                <div class="search-bar">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="text" placeholder="Search people, posts, groups, clubs, events...">
+</div>
+                <div class="header-actions">
+                    <div class="header-icon"><i class="fa-regular fa-bell"></i><span class="notification-badge"></span></div>
+                    <div class="header-user"><img src="assets/images/students/kawsar.png?img=11" alt="User" class="avatar"></div>
+                </div>
+            </header>
+            <div class="main-content">
+                <div class="page-content">
+                    <h1 class="page-title mb-4">Settings</h1>
+                    <div class="feed-section" style="max-width:640px;">
+                        <div class="card mb-3">
+                            <h4 class="card-title"><i class="fa-solid fa-user text-primary mr-2"></i> Edit Profile</h4>
+                            <form id="settings-profile-form">
+                                <div class="mb-3"><label class="form-label">Name</label><input class="form-control" name="name" id="settings-name" required></div>
+                                <div class="mb-3"><label class="form-label">About</label><textarea class="form-control" name="about" id="settings-about" rows="3"></textarea></div>
+                                <div class="mb-3"><label class="form-label">Avatar URL</label><input type="url" class="form-control" name="avatar_url" placeholder="Image URL"></div>
+                                <button type="submit" class="btn btn-primary">Save Profile</button>
+                            </form>
+                        </div>
+                        <div class="card mb-3">
+                            <h4 class="card-title"><i class="fa-solid fa-lock text-primary mr-2"></i> Change Password</h4>
+                            <form id="settings-password-form">
+                                <div class="mb-3"><label class="form-label">Current Password</label><input type="password" class="form-control" name="current_password" required></div>
+                                <div class="mb-3"><label class="form-label">New Password</label><input type="password" class="form-control" name="new_password" required></div>
+                                <div class="mb-3"><label class="form-label">Confirm Password</label><input type="password" class="form-control" name="confirm_password" required></div>
+                                <button type="submit" class="btn btn-primary">Change Password</button>
+                            </form>
+                        </div>
+                        <div class="card mb-3">
+                            <h4 class="card-title"><i class="fa-solid fa-shield-halved text-primary mr-2"></i> Privacy</h4>
+                            <div class="mb-3"><label class="d-flex justify-content-between align-items-center"><span>Message Privacy</span>
+                                <select class="form-control" name="message_privacy" style="width:auto;"><option value="everyone">Everyone</option><option value="connections">Connections Only</option><option value="none">No One</option></select>
+                            </label></div>
+                            <div class="mb-3"><label class="d-flex justify-content-between align-items-center"><span>Post Privacy</span>
+                                <select class="form-control" name="post_privacy" style="width:auto;"><option value="everyone">Everyone</option><option value="connections">Connections Only</option><option value="none">No One</option></select>
+                            </label></div>
+                        </div>
+                        <div class="card mb-3">
+                            <h4 class="card-title"><i class="fa-solid fa-bell text-primary mr-2"></i> Notifications</h4>
+                            <div class="mb-3"><label class="d-flex justify-content-between align-items-center"><span>Email Notifications</span><input type="checkbox" name="email_notifications" checked></label></div>
+                            <div class="mb-3"><label class="d-flex justify-content-between align-items-center"><span>Push Notifications</span><input type="checkbox" name="push_notifications" checked></label></div>
+                        </div>
+                        <div class="card mb-3">
+                            <h4 class="card-title"><i class="fa-solid fa-download text-primary mr-2"></i> Data</h4>
+                            <button class="btn btn-outline" id="download-data"><i class="fa-solid fa-download"></i> Download My Data (JSON)</button>
+                        </div>
+                        <div class="card">
+                            <h4 class="card-title text-danger"><i class="fa-solid fa-trash"></i> Danger Zone</h4>
+                            <button class="btn btn-danger" id="delete-account"><i class="fa-solid fa-trash"></i> Delete Account</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/settings.js"></script>
+</body>
+</html>

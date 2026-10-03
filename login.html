@@ -29,27 +29,28 @@
                 <div class="auth-tab">Guest</div>
             </div>
 
-            <form action="index.html">
+            <form id="login-form">
+                <div id="login-error" class="text-danger mb-3" style="display:none; font-size: 14px; text-align: center;"></div>
                 <div class="form-group">
                     <label class="form-label">University Email</label>
-                    <input type="email" class="form-control" placeholder="name@university.edu" required>
+                    <input type="email" id="login-email" class="form-control" placeholder="name@university.edu" required>
                 </div>
                 <div class="form-group">
                     <div class="d-flex justify-content-between align-items-center mb-1">
                         <label class="form-label m-0">Password</label>
                         <a href="#" class="text-primary text-sm">Forgot Password?</a>
                     </div>
-                    <input type="password" class="form-control" placeholder="••••••••" required>
+                    <input type="password" id="login-password" class="form-control" placeholder="••••••••" required>
                 </div>
 
-                <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                <button type="submit" id="login-btn" class="btn btn-primary btn-block">Sign In</button>
             </form>
 
-            <a href="index.html" style="text-decoration: none; display: block;">
+            <!-- <a href="index.html" style="text-decoration: none; display: block;">
                 <button type="button" class="btn-skip">
                     <i class="fa-regular fa-clock"></i> Skip for now
                 </button>
-            </a>
+            </a> -->
             <!-- 
             <div class="auth-footer-notice">
                 <i class="fa-solid fa-shield-check"></i>

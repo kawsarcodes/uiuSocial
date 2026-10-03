@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcements - UIU Social</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/club_detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <i class="fa-solid fa-graduation-cap mr-2 text-primary"></i>
+                <div>
+                    <a href="/uiusocial/index.html">UIU Social</a>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-item">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+                <a href="groups.html" class="nav-item">
+                    <i class="fa-solid fa-users-line"></i> Department Groups
+                </a>
+                <a href="announcements.html" class="nav-item active">
+                    <i class="fa-solid fa-bullhorn"></i> Announcements
+                </a>
+                <a href="club_hub.html" class="nav-item">
+                    <i class="fa-solid fa-puzzle-piece"></i> Club Hub
+                </a>
+                <a href="events.html" class="nav-item">
+                    <i class="fa-regular fa-calendar"></i> Events
+                </a>
+                <a href="messages.html" class="nav-item">
+                    <i class="fa-regular fa-message"></i> Messages
+                </a>
+                <a href="admin.html" class="nav-item">
+                    <i class="fa-solid fa-shield-halved"></i> Admin Panel
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="login.html" class="nav-item sign-out text-danger">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Sign Out
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="top-header">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search announcements...">
+                </div>
+                <div class="header-actions">
+                    <div class="header-icon">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-badge"></span>
+                    </div>
+                    <div class="header-user">
+                        <img src="assets/images/students/kawsar.png?img=11" alt="User Avatar" class="avatar">
+                    </div>
+                </div>
+            </header>
+
+            <div class="page-content">
+                <div class="d-flex justify-content-between align-items-end mb-4">
+                    <div class="page-header m-0">
+                        <h1 class="page-title">Announcements</h1>
+                        <p class="page-subtitle">Academic updates, seminar announcements, fests, and campus news shared by faculty.</p>
+                    </div>
+                    <button class="btn btn-primary btn-sm" id="create-announcement-btn" style="display:none;">
+                        <i class="fa-solid fa-plus"></i> Create Announcement
+                    </button>
+                </div>
+
+                <!-- Create Announcement Card (for faculty/admin) -->
+                <div class="card create-post-card mb-3" id="announcement-create-card" style="display:none;">
+                    <div class="d-flex gap-2 mb-2">
+                        <img id="announcement-avatar" src="assets/images/students/default.png" alt="User"
+                            class="avatar header-avatar-img">
+                        <div style="flex:1;">
+                            <input type="text" id="announcement-title-input" class="form-control mb-2"
+                                placeholder="Title" style="font-size:14px;">
+                            <textarea id="announcement-content-input" class="form-control" rows="3"
+                                placeholder="Write your announcement..."></textarea>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end gap-2 mt-2">
+                        <button type="button" class="btn btn-outline btn-sm" id="announcement-cancel-btn">Cancel</button>
+                        <button type="submit" class="btn btn-primary btn-sm" id="announcement-submit-btn">Post Announcement</button>
+                    </div>
+                </div>
+
+                <!-- Announcements List -->
+                <div id="announcements-list">
+                    <div style="text-align:center;color:var(--text-muted);padding:40px;">
+                        <i class="fa-solid fa-bullhorn" style="font-size:48px;margin-bottom:12px;opacity:0.3;"></i>
+                        <p>Loading announcements...</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/announcements.js"></script>
+</body>
+
+</html>
